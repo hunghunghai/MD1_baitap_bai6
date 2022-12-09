@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="sophut">
+<button onclick="tinh()">Tính Tiền</button>
+<p>350đ/phút</p>
+<p id="tien"></p>
+<script>
+  function tinh() {
+    let soPhust = +document.getElementById('sophut').value;
+    let soTien = 350 * soPhust
+    document.getElementById('tien').innerText='Tổng Tiền Là '+ soTien +"đ";
+  }
+</script>
+</body>
+</html>

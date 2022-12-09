@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="tuoi">
+<button onclick="kiemTraTuoi()">Kiểm Tra</button>
+<h2 id="dieuKien"></h2>
+<script>
+  function kiemTraTuoi() {
+    let oil = +document.getElementById('tuoi').value;
+    if ( oil >= 16){
+      document.getElementById('dieuKien').innerHTML= 'Vào đc Lớp 10'
+    }
+    else {
+        document.getElementById('dieuKien').innerHTML= 'Tuổi Con Ngan Con :)))))'
+    }
+  }
+
+</script>
+</body>
+</html>
