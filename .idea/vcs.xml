@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="VcsDirectoryMappings">
-    <mapping directory="$PROJECT_DIR$/baitap2" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/baitap6/baitap1" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/baitap6/baitap2" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/kiemtra" vcs="Git" />
   </component>
 </project>
