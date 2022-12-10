@@ -5,6 +5,24 @@
     <title>Title</title>
 </head>
 <body>
-
+<label><input id="docF" type="text"></label>
+<button onclick="doiDoC()">Độ C -> F</button>
+<button onclick="doiDof()">Độ F -> C</button>
+<script>
+    function doiDoC (){
+        let doC = document.getElementById('docF').value;
+        let doCo = (9* doC)/5+32;
+        if (doCo){
+            alert(doCo + 'Độ F')
+        }
+    }
+    function doiDof(){
+    let doF = document.getElementById('docF').value;
+    let doFo = (doF - 32)*5/9;
+        if (doFo){
+            alert(doFo + 'Độ C')
+        }
+    }
+</script>
 </body>
 </html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    Nhập số a: <input type="text" id="a" value=""/> <br/>
+    Nhập số b: <input type="text" id="b" value=""/> <br/>
+    <button onclick="giai_pt_bac_nhat()">Tính</button>
+</form>
+
+<script>
+    function giai_pt_bac_nhat(){
+        let aaa = document.getElementById('a').value;
+        let bbb = document.getElementById('b').value;
+            if (aaa==0||bbb==0 ) {
+                alert('Phương trình vô số nghiệm');
+            } else if (aaa!=0||bbb==0) {
+                alert('Phương trình có nghiệm ');
+            } else if (aaa==0||bbb!=0) {
+                alert("Phương trình vô nghiệm");
+            } else {
+                alert('Phương trình có nghiệm ';
+            }
+    }
+</script>
+</body>
+</html>

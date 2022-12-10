@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label><input type="text" id="so_dien"></label>
+<p>3k/số</p>
+<button onclick="tinhTien()">Tính tiền</button>
+<h1 id="so_tien"></h1>
+<script>
+    function tinhTien() {
+        let sodien = document.getElementById('so_dien').value;
+        let sotien = sodien * 3
+        document.getElementById('so_tien').innerHTML ='Tổng tiền là :'+ sotien+'k'
+    }
+</script>
+</body>
+</html>

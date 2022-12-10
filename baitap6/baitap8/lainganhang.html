@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let tienGui = prompt('Nhập số tiền muốn gửi');
+    let thang = prompt('Nhập số thang sinh lời');
+    let tienloi = prompt('Nhập Phần trăm lãi xuất');
+
+
+
+
+    let tienGuin = parseInt(tienGui);
+    let thangn = parseInt(thang);
+    let tienloin = parseFloat(tienloi);
+
+
+
+
+    let tienlaisau = tienGuin*thangn*tienloin/12;
+    let tiennhan = tienGuin+tienlaisau;
+    document.write('Tiền gửi: ' +tienGui+ 'VNĐ', "<br>");
+    document.write(thang+ 'Tháng:', '<br>');
+    document.write('Lãi Xuất: ' +tienloi+ '%','<br>');
+    document.write('Tiền Lãi: ' +tienlaisau + 'VNĐ', '<br>');
+    document.write('Tổng tiền đc nhận: ' +tiennhan+ 'VNĐ', '<br>');
+</script>
+</body>
+</html>

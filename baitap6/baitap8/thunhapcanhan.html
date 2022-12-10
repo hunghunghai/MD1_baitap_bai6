@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    td {
+        border: 2px black solid;
+    }
+
+    th {
+        border: black 2px solid;
+    }
+
+</style>
+<body>
+<table style="border: black 5px solid; width: 60%; height: 100px; text-align: center">
+    <tr>
+        <th>Bậc</th>
+        <th>Thu nhập tháng</th>
+        <th>Số thuế phải nộp</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td id="mot">TN &lt;= 5tr</td>
+        <td id="mot2">TN x 5%</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td id="hai">5tr &lt; TN &lt;= 10tr</td>
+        <td id="hai2">TN x 10% - 0.25tr</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td id="ba">10tr &lt; TN &lt;= 18tr</td>
+        <td id="ba2">TN x 15% - 0.75tr</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td id="bon">18tr &lt; TN &lt;= 32tr</td>
+        <td id="bon2">TN x 20% - 1.65tr</td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td id="nam">32tr &lt; TN &lt;= 52tr</td>
+        <td id="nam2">TN x 25% - 3.25tr</td>
+    </tr>
+    <tr>
+        <td>6</td>
+        <td id="sau">52tr &lt; TN &lt;= 80tr</td>
+        <td id="sau2">TN x 30% - 5.85tr</td>
+    </tr>
+    <tr>
+        <td>7</td>
+        <td id="bay">TN &gt; 80tr</td>
+        <td id="bay2">TN x 35% - 9.85tr</td>
+    </tr>
+</table>
+<script>
+    let thu_nhap = prompt('Thu nhập hàng tháng ví dụ : 1000000');
+    let thue1 = (5 / 100) * thu_nhap;
+    let thue2 = (10 / 100) * thu_nhap - 250000;
+    let thua3 = (15 / 100) * thu_nhap - 750000;
+    let thue4 = (20 / 100) * thu_nhap - 1650000;
+    let thue5 = (25 / 100) * thu_nhap - 3250000;
+    let thue6 = (30 / 100) * thu_nhap - 5850000;
+    let thue7 = (35 / 100) * thu_nhap - 9850000;
+    if (thu_nhap < 5000000) {
+        document.getElementById('mot').innerHTML = '' + thu_nhap;
+        document.getElementById('mot2').innerHTML = '' + thue1
+    } else if (5000000 < thu_nhap < 10000000) {
+        document.getElementById('hai').innerHTML = '' + thu_nhap;
+        document.getElementById('hai2').innerHTML = '' + thue2;
+    } else if (10000000 < thu_nhap < 18000000) {
+        document.getElementById('ba').innerHTML = '' + thu_nhap;
+        document.getElementById('ba2').innerHTML = '' + thua3;
+    } else if (18000000 < thu_nhap < 32000000) {
+        document.getElementById('bon').innerHTML = '' + thu_nhap;
+        document.getElementById('bon2').innerHTML = '' + thue4;
+    } else if (18000000 < thu_nhap < 52000000) {
+        document.getElementById('nam').innerHTML = '' + thu_nhap;
+        document.getElementById('nam2').innerHTML = '' + thue5;
+    } else if (18000000 < thu_nhap < 80000000) {
+        document.getElementById('sau').innerHTML = '' + thu_nhap;
+        document.getElementById('sau2').innerHTML = '' + thue6;
+    } else if (18000000 < thu_nhap < 80000000) {
+        document.getElementById('bay').innerHTML = '' + thu_nhap;
+        document.getElementById('bay2').innerHTML = '' + thue7;
+    }
+</script>
+</body>
+</html>
